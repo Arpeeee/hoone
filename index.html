@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="./hoone.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- fontawsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- nice animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-hoone">
+      <div class="container-fluid">
+        <!-- 主頁面按鈕 -->
+        <a class="navbar-header" href="#">
+          <img
+            src="./Logo2 (1).png"
+            width="90vw"
+            height="auto"
+            class="br-lin-circal"
+            onclick="topText(this)"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-3 ms-auto mb-2 mb-lg-0">
+            <li class="nav-item active dropdown">
+              <a
+                class="nav-link dropdown-toggle lin-hover"
+                aria-current="page"
+                href="/index.html/#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                公司簡介
+              </a>
+              <ul class="nav-item dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./index.html#aboutUs"
+                    >關於我們</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#vision"
+                    >公司願景</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#organization"
+                    >組織架構</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#aboutUs"
+                    >企業永續</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#aboutUs"
+                    >職場福利</a
+                  >
+                </li>
+                <!-- <il><a class="dropdown-item" href="#aboutUs"></a></il> -->
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link lin-hover dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                >營業項目
+              </a>
+              <ul class="nav-item dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./Production/#">經銷資格</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#vision">系統規劃服務</a>
+                </li>
+                <li><a class="dropdown-item" href="#aboutUs">認證肯定</a></li>
+                <!-- <il><a class="dropdown-item" href="#aboutUs"></a></il> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link lin-hover"
+                href="https://www.104.com.tw/company/1a2x6bmeyo"
+                target="_blank"
+                >徵才專區</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lin-hover" href="#">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mesh image -->
+    <div
+      class="hoone-image d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="hoone-text" data-aos="zoom-in">歡迎來到 和瑩電腦</div>
+      <span class="hoone-small-text" data-aos="zoom-in">Wellcom to Hoone </span>
+    </div>
+
+    <!-- Company Description -->
+    <section id="aboutUs" class="bg-light py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6 code--small code--left" data-aos="fade-right">
+            <h1 class="pb-3 hoone-color">關於我們</h1>
+            <p>
+              和瑩電腦股份有限公司前身為和瑩貿易有限公司，
+              成立於民國109年3月目前資本額為新台幣2,000萬元整，
+              本公司經營初期係以貿易為主，銷售生技產品為輔。
+            </p>
+            <p>
+              隨著市場的變化並考量未來多元經營方略，在研究電子資訊業市場後，
+              決定調整經營型態，
+              遂於民國110年2月間申請變更為和瑩電腦股份有限公司，
+              以銷售通電信器材設備、周邊施工配件及資訊軟、硬體相關等業務範疇，
+              積極拓展產品代理的同時也逐步切入軟體開發領域，
+              預計民國114年間資本額達5,000萬元整。
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./Logo2 (1).png"
+              alt="Company Image"
+              class="img-fluid code--small code--right"
+              data-aos="fade-left"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company History Intro -->
+    <section id="vision" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <h1 class="row hoone-color justify-content-center mb-3">
+            願景與使命
+          </h1>
+          <div class="separate-line"></div>
+        </div>
+
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+            <img
+              src="./christopher-burns-Kj2SaNHG-hg-unsplash.jpg"
+              alt="Company Image"
+              class="img-fluid code--small code--right"
+              data-aos="fade-left"
+            />
+          </div>
+          <div class="col-md-6 code--small code--left" data-aos="fade-right">
+            <!-- <h1 class="mb-3 hoone-color">公司願景</h1> -->
+            <h4>-公司願景</h4>
+            <p>致力成為客戶站上世界巔峰的重要推手</p>
+            <h4>-公司使命</h4>
+            <p>用心聆聽客戶的需求；用心看見企業的發展；用心尋找最適合的契機</p>
+            <h4>-核心價值</h4>
+            <p>
+              誠信正直、認真負責、團隊與專業，扮演了貫徹使命與實現願景的重要橋樑
+            </p>
+            <h4>-追求目標</h4>
+            <p>
+              合作夥伴及員工是我們最重要的資產，滿足合作夥伴需求、讓員工無後顧之憂，打造以「人」為本的友善職場，是我們致力追求的目標
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 組織架構 -->
+    <section id="organization" class="bg-light py-5">
+      <div class="container">
+        <h1 class="row hoone-color justify-content-center">組織架構</h1>
+        <div class="separate-line"></div>
+
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-12">
+            <img
+              src="./組織圖.png"
+              alt="Company Image"
+              class="img-fluid code--small code--right"
+              data-aos="zoom-out"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 職場福利 -->
+    <section id="benefits" class="bg-light py-5">
+      <div class="container">
+        <h1 class="row hoone-color justify-content-center">組織架構</h1>
+        <div class="separate-line"></div>
+
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-2">
+            <div class="">薪資獎金</div>
+            <div class="benefitClass">薪資獎金</div>
+            <div class="benefitClass">薪資獎金</div>
+            <div class="benefitClass">薪資獎金</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pt-4 pb-2 bg-hoone">
+      <div class="container">
+        <h1 class="row bl justify-content-center mb-4">聯絡我們</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.491605643476!2d-82.41385768482417!3d27.94923908267374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d5d5b5c1f92e447!2sTampa%20Bay%20Times%20Forum!5e0!3m2!1sen!2sus!4v1647275451128!5m2!1sen!2sus"
+              width="90%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="col-md-6 row">
+            <ul class="list-unstyled col-6">
+              <h5>樂利辦事處</h5>
+              <li>
+                <i class="bi bi-geo-alt-fill me-2"></i>123 Main Street, Tampa,
+                FL 33602
+              </li>
+              <li><i class="bi bi-telephone-fill me-2"></i>(123) 456-7890</li>
+              <li>
+                <i class="bi bi-envelope-fill me-2"></i
+                ><a href="mailto:info@example.com">info@example.com</a>
+              </li>
+            </ul>
+            <ul class="list-unstyled col-6">
+              <h5>樂利辦事處</h5>
+              <li>
+                <i class="bi bi-geo-alt-fill me-2"></i>123 Main Street, Tampa,
+                FL 33602
+              </li>
+              <li><i class="bi bi-telephone-fill me-2"></i>(123) 456-7890</li>
+              <li>
+                <i class="bi bi-envelope-fill me-2"></i
+                ><a href="mailto:info@example.com">info@example.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="text-center p-4">
+          Copyright © 2023 和瑩電腦股份有限公司. All rights reserved.
+        </h4>
+      </div>
+    </footer>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script>
+      AOS.init({ once: true });
+      const topText = (w) => {};
+    </script>
+  </body>
+</html>

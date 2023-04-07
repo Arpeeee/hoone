@@ -1,0 +1,100 @@
+:root {
+  --hoone-background-color: #16282951;
+  --hoone-color: #71c7c8;
+}
+
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+  animation: slide-in-down 0.2s 0.3s 1 ease-in both;
+}
+
+html {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  /* min-height: 200vh; */
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.bg-hoone {
+  background-color: rgb(49 219 204);
+}
+
+.hoone-color {
+  color: var(--hoone-color);
+}
+
+.hoone-image {
+  background-image: url("./skyscrapers-gd7fd75f5a_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  @media (max-width: 480px) {
+    height: 300px;
+  }
+}
+
+.hoone-image-business {
+  background-image: url("../startup-g140c41bf9_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  @media (max-width: 480px) {
+    height: 200px;
+  }
+}
+
+.hoone-text {
+  text-align: center;
+  color: white;
+  font-size: 4.5vw;
+
+  background-color: var(--hoone-background-color);
+}
+
+.hoone-small-text {
+  color: #ffffff;
+  background-color: var(--hoone-background-color);
+  text-align: center;
+  font-size: 10px;
+}
+
+.br-lin-circal {
+  border-radius: 80vw;
+}
+
+.lin-hover {
+  border-bottom: 3px solid rgba(1, 1, 1, 0);
+  &:hover {
+    border-bottom: 3px solid rgb(0, 161, 118);
+    color: rgb(54, 54, 54);
+    transition: 1s;
+    animation: animate 5s ease infinite;
+  }
+}
+
+.lin-span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#vision {
+  h4 {
+    margin-top: 15px;
+  }
+}
+
+.separate-line {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 30px 0;
+}
