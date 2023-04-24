@@ -1,0 +1,224 @@
+@charset "UTF-8";
+:root {
+  --hoone-background-color: #16282951;
+  --hoone-color: #71c7c8;
+}
+
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, 微軟正黑體;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  animation: slide-in-down 0.2s 0.3s 1 ease-in both;
+}
+
+html {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  /* min-height: 200vh; */
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.bg-hoone {
+  background-color: rgb(49, 219, 204);
+}
+
+.hoone-color {
+  color: var(--hoone-color);
+}
+
+.hoone-image {
+  background-image: url("./photo/skyscrapers-gd7fd75f5a_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+@media (max-width: 480px) {
+  .hoone-image {
+    height: 300px;
+  }
+}
+
+.hoone-image-business {
+  background-image: url("../photo/startup-g140c41bf9_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+@media (max-width: 480px) {
+  .hoone-image-business {
+    height: 200px;
+  }
+}
+
+.hoone-text {
+  text-align: center;
+  color: white;
+  font-size: 4.5vw;
+  background-color: var(--hoone-background-color);
+}
+
+.hoone-small-text {
+  color: #ffffff;
+  background-color: var(--hoone-background-color);
+  text-align: center;
+  font-size: 10px;
+}
+
+.br-lin-circal {
+  border-radius: 80vw;
+}
+
+.lin-hover {
+  border-bottom: 3px solid rgba(1, 1, 1, 0);
+}
+.lin-hover:hover {
+  border-bottom: 3px solid rgb(0, 161, 118);
+  color: rgb(54, 54, 54);
+  transition: 1s;
+  animation: animate 5s ease infinite;
+}
+
+.lin-span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#vision h4 {
+  margin-top: 15px;
+}
+
+.separate-line {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 30px 0;
+}
+
+.benefitDiv {
+  height: 300px;
+  padding: 0 !important;
+}
+.benefitDiv .benefitClass {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.benefitDiv .benefitClass button {
+  padding: 20px;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #71c7c8;
+  border-right: 7px solid #71c7c8;
+  background-color: white;
+}
+.benefitDiv .benefitClass .hovering {
+  background-color: #71c7c8;
+  transition: 1s;
+  margin-left: -4px;
+  width: calc(100% + 4px);
+}
+.benefitDiv .benefitIntro {
+  height: 100%;
+  border: 2px solid #71c7c8;
+}
+.benefitDiv .benefitIntro div {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.benefitDiv .benefitIntro div img {
+  max-height: 100%;
+}
+@media (max-width: 768px) {
+  .benefitDiv .benefitClass {
+    padding: 0;
+    height: auto;
+    flex-direction: row;
+  }
+  .benefitDiv .benefitClass button {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    width: 25% !important;
+    font-weight: bold;
+    border: 1px solid #71c7c8;
+    border-bottom: 7px solid #71c7c8;
+    background-color: #ffffff;
+  }
+  .benefitDiv .benefitClass button:hover, .benefitDiv .benefitClass button:active {
+    background-color: #71c7c8;
+    transition: 0.6s;
+    margin-top: -2px;
+    margin-left: 0px;
+  }
+  .benefitDiv .benefitClass .hovering {
+    background-color: #71c7c8;
+    transition: 0.6s;
+    margin-top: -2px;
+    margin-left: 0px;
+  }
+}
+
+#companyList li {
+  line-height: 3;
+  font-size: 20px;
+}
+
+.businessDiv {
+  height: 550px;
+  display: flex;
+}
+.businessDiv div {
+  overflow: hidden;
+  width: 100%;
+}
+.businessDiv h2 {
+  text-align: center;
+}
+.businessDiv li {
+  line-height: 2;
+  font-size: 1.2em;
+}
+.businessDiv ul {
+  height: 150px;
+}
+
+@media (max-width: 1200px) {
+  .businessDiv {
+    height: 470px;
+  }
+  li {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 992px) {
+  .businessDiv {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .businessDiv {
+    height: auto;
+  }
+  .businessDiv li {
+    font-size: 1.2em;
+  }
+  .businessDiv ul {
+    height: 150px;
+  }
+}/*# sourceMappingURL=hoone.css.map */

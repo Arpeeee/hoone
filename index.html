@@ -25,6 +25,8 @@
     <!-- nice animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-hoone">
@@ -32,7 +34,7 @@
         <!-- 主頁面按鈕 -->
         <a class="navbar-header" href="#">
           <img
-            src="./Logo2 (1).png"
+            src="./photo/Logo2 (1).png"
             width="90vw"
             height="auto"
             class="br-lin-circal"
@@ -79,13 +81,9 @@
                     >組織架構</a
                   >
                 </li>
+
                 <li>
-                  <a class="dropdown-item" href="./index.html#aboutUs"
-                    >企業永續</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./index.html#aboutUs"
+                  <a class="dropdown-item" href="./index.html#benefits"
                     >職場福利</a
                   >
                 </li>
@@ -101,12 +99,24 @@
               </a>
               <ul class="nav-item dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./Production/#">經銷資格</a>
+                  <a
+                    class="dropdown-item"
+                    href="./Production/index.html#companyList"
+                    >經銷項目</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#vision">系統規劃服務</a>
+                  <a
+                    class="dropdown-item"
+                    href="./Production/index.html#company"
+                    >系統規劃服務</a
+                  >
                 </li>
-                <li><a class="dropdown-item" href="#aboutUs">認證肯定</a></li>
+                <!-- <li>
+                  <a class="dropdown-item" href="./Production/index.html"
+                    >認證肯定</a
+                  >
+                </li> -->
                 <!-- <il><a class="dropdown-item" href="#aboutUs"></a></il> -->
               </ul>
             </li>
@@ -119,7 +129,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link lin-hover" href="#">聯絡我們</a>
+              <a class="nav-link lin-hover" href="#connectUs">聯絡我們</a>
             </li>
           </ul>
         </div>
@@ -156,7 +166,7 @@
           </div>
           <div class="col-md-6">
             <img
-              src="./Logo2 (1).png"
+              src="./photo/Logo2 (1).png"
               alt="Company Image"
               class="img-fluid code--small code--right"
               data-aos="fade-left"
@@ -169,17 +179,18 @@
     <!-- Company History Intro -->
     <section id="vision" class="bg-light py-5">
       <div class="container">
-        <div class="row">
-          <h1 class="row hoone-color justify-content-center mb-3">
-            願景與使命
-          </h1>
-          <div class="separate-line"></div>
-        </div>
+        <h1
+          class="col-12 hoone-color d-flex justify-content-center mb-3"
+          data-aos="zoom-out"
+        >
+          願景與使命
+        </h1>
+        <div class="separate-line"></div>
 
         <div class="row align-items-center justify-content-between">
           <div class="col-md-6">
             <img
-              src="./christopher-burns-Kj2SaNHG-hg-unsplash.jpg"
+              src="./photo/christopher-burns-Kj2SaNHG-hg-unsplash.jpg"
               alt="Company Image"
               class="img-fluid code--small code--right"
               data-aos="fade-left"
@@ -207,13 +218,15 @@
     <!-- 組織架構 -->
     <section id="organization" class="bg-light py-5">
       <div class="container">
-        <h1 class="row hoone-color justify-content-center">組織架構</h1>
+        <h1 class="row hoone-color justify-content-center" data-aos="zoom-out">
+          組織架構
+        </h1>
         <div class="separate-line"></div>
 
         <div class="row align-items-center justify-content-between">
           <div class="col-md-12">
             <img
-              src="./組織圖.png"
+              src="./photo/組織圖.png"
               alt="Company Image"
               class="img-fluid code--small code--right"
               data-aos="zoom-out"
@@ -229,28 +242,42 @@
         <h1 class="row hoone-color justify-content-center">職場福利</h1>
         <div class="separate-line"></div>
 
-        <div class="benefitDiv row align-items-center justify-content-between">
-          <div class="col-md-3 col-sm-6 benefitClass">
-            <div>薪資獎金</div>
-            <div>員工福利</div>
-            <div>休假</div>
-            <div>保險</div>
+        <div
+          id="app"
+          class="benefitDiv row align-items-center justify-content-center"
+          data-aos="fade-out"
+        >
+          <div class="col-md-3 col-sm-12 benefitClass">
+            <button
+              v-for="inside,key in companyBenifit"
+              :key="key"
+              v-on:mouseover="hoverCompany(key)"
+              v-bind:class="{ hovering: inside.isHovering }"
+            >
+              {{ key }}
+            </button>
           </div>
-          <div class="col-md-9 col-sm-6 benefitIntro border row">
+          <div class="col-md-9 col-sm-12 benefitIntro row">
             <div>
-              <img class="img-fluid" src="./startup-g140c41bf9_1920.jpg" />
+              <img class="img-fluid" :src="useData.imgLink" />
             </div>
             <div>
-              <p>1. 具競爭力的薪資水準</p>
-              <p>2. 提供員工每個月伙食津貼</p>
-              <p>3. 加班費依實按勞基法規定給付</p>
+              <p
+                data-aos="fade-left"
+                class="code--left"
+                data-aos-once="false"
+                v-for="(item, index) in useData.content"
+                :key="index"
+              >
+                {{index+1}}. {{item}}
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="pt-4 pb-2 bg-hoone">
+    <footer id="connectUs" class="pt-4 pb-2 bg-hoone">
       <div class="container">
         <h1 class="row bl justify-content-center mb-4">聯絡我們</h1>
         <div class="row">
@@ -266,20 +293,20 @@
             ></iframe>
           </div>
           <div class="col-md-6 row">
-            <ul class="list-unstyled col-6">
-              <h5>樂利辦事處</h5>
+            <ul class="list-unstyled col-6 p-3">
+              <h5>樂利路辦事處</h5>
               <li>地址 : 台北市大安區樂利路60號2樓</li>
               <li>電話 : 02-27329386</li>
               <li>
                 <a href="mailto:info@example.com">ariel@hoone.com.tw</a>
               </li>
             </ul>
-            <ul class="list-unstyled col-6">
+            <ul class="list-unstyled col-6 p-3">
               <h5>總公司</h5>
               <li>地址 : 臺北市大同區民權西路106號3樓之1</li>
-              <li>電話 : 02-85228685</li>
+              <li>電話 : 02-25576828</li>
               <li>
-                <a href="mailto:info@example.com">info@example.com</a>
+                <a href="mailto:info@example.com">ariel@hoone.com.tw</a>
               </li>
             </ul>
           </div>
@@ -301,12 +328,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
+    <script src="/main.js"></script>
     <script>
-      AOS.init({ once: true });
-      const topText = (w) => {};
+      AOS.init({ once: true, duration: 1200, delay: 100 });
     </script>
   </body>
 </html>

@@ -30,9 +30,9 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-hoone">
       <div class="container-fluid">
         <!-- 主頁面按鈕 -->
-        <a class="navbar-header" href="#">
+        <a class="navbar-header" href="../index.html#">
           <img
-            src="../Logo2 (1).png"
+            src="../photo/Logo2 (1).png"
             width="90vw"
             height="auto"
             class="br-lin-circal"
@@ -63,13 +63,25 @@
                 公司簡介
               </a>
               <ul class="nav-item dropdown-menu">
-                <li><a class="dropdown-item" href="#aboutUs">關於我們</a></li>
-                <li><a class="dropdown-item" href="#vision">公司願景</a></li>
-                <li><a class="dropdown-item" href="#aboutUs">組織架構</a></li>
+                <li>
+                  <a class="dropdown-item" href="../index.html#aboutUs"
+                    >關於我們</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../index.html#vision"
+                    >公司願景</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../index.html#aboutUs"
+                    >組織架構</a
+                  >
+                </li>
                 <!-- <il><a class="dropdown-item" href="#aboutUs"></a></il> -->
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link lin-hover dropdown-toggle"
                 href="#"
@@ -77,14 +89,27 @@
                 data-bs-toggle="dropdown"
                 >營業項目
               </a>
-              <ul>
-                <il></il>
-                <il></il>
-                <il></il>
+              <ul class="nav-item dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../Production/index.html#companyList"
+                    >經銷資格</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../Production/index.html#company"
+                    >系統規劃服務</a
+                  >
+                </li>
+                <!-- <li>
+                  <a class="dropdown-item" href="../Production/index.html"
+                    >認證肯定</a
+                  >
+                </li> -->
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link lin-hover" href="#">企業永續</a>
             </li>
             <li class="nav-item">
               <a
@@ -95,7 +120,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link lin-hover" href="#">聯絡我們</a>
+              <a class="nav-link lin-hover" href="#connectUs">聯絡我們</a>
             </li>
           </ul>
         </div>
@@ -111,95 +136,140 @@
       <span class="hoone-small-text" data-aos="zoom-in">Company Business</span>
     </div>
 
-    <div class="container">
-      <h1 class="p-3 hoone-color align-content-center">經銷資格</h1>
-      <div class="row align-items-center justify-content-between">
-        <div id="business-1" class="bg-light col-md-4 py-5 border">
-          <h2>Business Line 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-            vel mauris ac fermentum. Maecenas vulputate enim non elit dapibus,
-            non rhoncus sapien fermentum. Suspendisse semper bibendum ex, vitae
-            commodo felis pretium ac. Donec auctor lacus sed quam ultricies, vel
-            euismod odio suscipit.
-          </p>
-        </div>
-        <!-- Business Line 2 -->
-
-        <div class="bg-light col-md-4 py-5 border">
-          <h2>Business Line 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-            vel mauris ac fermentum. Maecenas vulputate enim non elit dapibus,
-            non rhoncus sapien fermentum. Suspendisse semper bibendum ex, vitae
-            commodo felis pretium ac. Donec auctor lacus sed quam ultricies, vel
-            euismod odio suscipit.
-          </p>
-        </div>
-
-        <!-- Business Line 3 -->
-
-        <div class="bg-light col-md-4 py-5 border">
-          <h2>Business Line 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-            vel mauris ac fermentum. Maecenas vulputate enim non elit dapibus,
-            non rhoncus sapien fermentum. Suspendisse semper bibendum ex, vitae
-            commodo felis pretium ac. Donec auctor lacus sed quam ultricies, vel
-            euismod odio suscipit.
-          </p>
+    <!-- Company Buessness List -->
+    <section id="companyList" class="bg-light py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <h1 class="col-12 mb-3 text-center hoone-color">經銷項目與資格</h1>
+          <h5 class="col-12 mb-3 text-center">
+            代理、經銷及販售之產品項目以
+            1.通訊電纜；2.無線與微波天線；3.各廠牌電池等產品為主，詳細如下:
+          </h5>
+          <div class="separate-line"></div>
+          <div class="col-md-6">
+            <img
+              src="../photo/riccardo-annandale-7e2pe9wjL9M-unsplash.jpg"
+              alt="Company Image"
+              class="img-fluid code--small code--right"
+              data-aos="fade-left"
+            />
+          </div>
+          <div class="col-md-6 code--small code--left" data-aos="fade-right">
+            <ul>
+              <li>UPS不斷電系統等電源設備</li>
+              <li>SMR交換式直流電源系統</li>
+              <li>廠牌產業用鉛酸蓄電池</li>
+              <li>山府：各式充電機(可客製化)等電源設備</li>
+              <li>美商康普(CpmmScope)：全系列電信電纜、微波及無線電天線</li>
+              <li>比利時EUPEN：全系列電信電纜</li>
+              <li>艾爾泰克：各式智慧型建築類監測設備及進口蓄電池</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <footer class="py-4 bg-hoone">
+    <!-- Company Buessness List -->
+    <section id="company" class="bg-light py-5">
       <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <h1 class="col-12 mb-3 text-center hoone-color">
+            系統規劃與軟體服務
+          </h1>
+          <h5 class="col-12 mb-3 text-center">
+            除了經銷和代理產品，本公司亦提供
+            1.伺服器建置；2.儲存設備規劃；3.軟體技術支援等服務
+          </h5>
+          <div class="separate-line"></div>
+          <div class="col-md-4 p-3 businessDiv">
+            <div class="border p-2">
+              <h2>伺服器建置</h2>
+              <ul>
+                <li>伺服器建置</li>
+                <li>虛擬平台、虛擬機建置</li>
+              </ul>
+              <img
+                src="../photo/ian-battaglia-9drS5E_Rguc-unsplash.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 p-3 businessDiv">
+            <div class="border p-2">
+              <h2>儲存設備規劃</h2>
+              <ul>
+                <li>備份備援、異地備援規劃</li>
+                <li>資料庫還原演練</li>
+                <li>Oracle授權</li>
+              </ul>
+              <img
+                src="../photo/ds_fa-x.png.imgo.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 p-3 businessDiv">
+            <div class="border p-2">
+              <h2>軟體技術支援</h2>
+              <ul>
+                <li>Oracle資料庫維護</li>
+                <li>資料庫、伺服器維護規劃</li>
+                <li>系統監控與儀錶板服務</li>
+                <li>大數據資料界接服務</li>
+              </ul>
+              <img
+                src="../photo/tattood-man-using-creative-technology.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="connectUs" class="pt-4 pb-2 bg-hoone">
+      <div class="container">
+        <h1 class="row bl justify-content-center mb-4">聯絡我們</h1>
         <div class="row">
           <div class="col-md-6">
-            <h5>Contact Us</h5>
-            <p>台北市大安區<br />樂利路60號2樓</p>
-            <p>Phone: 02-27329658<br />Email: ariel@hoone.com.tw</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.234537594666!2d121.54953581481088!3d25.02611348397602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa33ae8c9fab%3A0x3f1223ebb6c390db!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5qiC5Yip6LevNjDomZ8!5e0!3m2!1szh-TW!2stw!4v1681115802869!5m2!1szh-TW!2stw"
+              width="90%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          <div class="col-md-6">
-            <h5>Follow Us</h5>
-            <ul class="list-unstyled">
+          <div class="col-md-6 row">
+            <ul class="list-unstyled col-6 p-3">
+              <h5>樂利辦事處</h5>
+              <li>地址 : 台北市大安區樂利路60號2樓</li>
+              <li>電話 : 02-27329386</li>
               <li>
-                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="mailto:info@example.com">ariel@hoone.com.tw</a>
               </li>
+            </ul>
+            <ul class="list-unstyled col-6 p-3">
+              <h5>總公司</h5>
+              <li>地址 : 臺北市大同區民權西路106號3樓之1</li>
+              <li>電話 : 02-85228685</li>
               <li>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="mailto:info@example.com">info@example.com</a>
               </li>
             </ul>
           </div>
         </div>
-        <hr />
-        <div class="row">
-          <div class="col-md-6">
-            <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <p>&copy; 2023 Company, Inc. All rights reserved.</p>
-            <ul class="list-unstyled">
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Use</a></li>
-            </ul>
-          </div>
-        </div>
+        <h5 class="text-center p-4">
+          Copyright © 2023 和瑩電腦股份有限公司. All rights reserved.
+        </h5>
       </div>
     </footer>
-    <div class="container"></div>
-    <div class="bottom"></div>
+
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -216,7 +286,7 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
 
     <script>
-      AOS.init();
+      AOS.init({ once: true });
     </script>
   </body>
 </html>
